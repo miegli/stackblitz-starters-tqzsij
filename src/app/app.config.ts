@@ -58,7 +58,7 @@ export const appConfig: ApplicationConfig = {
                             (document as unknown as Document).startViewTransition(async () => {
                                 const wait = new Promise(async (resolve) => {
                                     const waitforAnchor = interval(10).pipe(
-                                        timeout(1000),
+                                        timeout(5000),
                                         filter(() => {
                                             return (
                                                 !config['viewTransitionWaitForCssSelector'] ||
