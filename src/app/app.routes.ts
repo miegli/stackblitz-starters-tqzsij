@@ -5,8 +5,9 @@ import { viewTransitionConfigData } from './viewTransitionConfigData';
 
 export const routes: Routes = [
   {
-    path: '*',
+    path: '',
     redirectTo: 'a',
+    pathMatch: 'full'
   },
   {
     path: 'a',
