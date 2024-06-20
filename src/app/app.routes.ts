@@ -17,7 +17,7 @@ export const routes: Routes = [
         path: 'b',
         component: TestBComponent,
         data: {
-            ...viewTransitionConfigData({ cssSelector: 'img' }),
+            ...viewTransitionConfigData({ cssSelector: 'app-test-c' }),
         },
     },
 ];
