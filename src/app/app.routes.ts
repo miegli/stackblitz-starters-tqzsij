@@ -21,11 +21,3 @@ export const routes: Routes = [
         },
     },
 ];
-
-
-const aem = {
-    image: {
-        url: '',
-        type: 'image',
-    }
-}

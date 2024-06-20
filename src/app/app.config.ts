@@ -57,7 +57,6 @@ export const appConfig: ApplicationConfig = {
                         if (config['viewTransitionWaitForCssSelector']) {
                             (document as unknown as Document).startViewTransition(async () => {
                                 const wait = new Promise(async (resolve) => {
-
                                     const waitforAnchor = interval(10).pipe(
                                         timeout(1000),
                                         filter(() => {
@@ -77,7 +76,6 @@ export const appConfig: ApplicationConfig = {
                                     resolve(void 0);
                                 });
                                 await wait;
-                                console.log('test');
                             });
 
                         }
